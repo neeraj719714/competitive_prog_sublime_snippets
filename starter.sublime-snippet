@@ -1,0 +1,43 @@
+<snippet>
+	<content><![CDATA[
+#include "bits/stdc++.h"
+using namespace std;
+
+void solve()
+{
+}
+
+int main()
+{
+ios_base::sync_with_stdio(false);cin.tie(NULL);
+
+#ifndef ONLINE_JUDGE
+freopen("input.txt", "r", stdin);
+freopen("error.txt", "w", stderr);
+freopen("output.txt", "w", stdout);
+#endif
+
+int t=1;
+
+// #ifndef ONLINE_JUDGE
+// cin>>t;
+// #endif
+
+while(t--)
+{
+	solve();
+	cout<<"\n\n\n";
+}
+
+#ifndef ONLINE_JUDGE
+cerr<<"time taken : "<<(float)clock()/CLOCKS_PER_SEC<<" secs"<<endl;
+#endif
+
+return 0;
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>starter</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.c++</scope>
+</snippet>
