@@ -1,9 +1,11 @@
 <snippet>
 	<content><![CDATA[
-vector< pair<long long int,long long int> > v$0;
+int t;
+cin>>t;
+while(t--){$0}
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>vpll</tabTrigger>
+	<tabTrigger>test_case</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.c++</scope>
 </snippet>
