@@ -1,9 +1,22 @@
 <snippet>
 	<content><![CDATA[
-vector< pair<long long int,long long int> > v$1;$0
+const ll N_MAX=1e6+1;
+ll seive[N_MAX];
+
+void seive_method()
+{
+	for(ll i=2;i<=N_MAX;i++)if(!seive[i])
+	{
+		seive[i]=i;
+		for(ll j=i;i*j<=N_MAX;j++)if(!seive[i*j])
+		{
+			seive[i*j]=i;
+		}
+	}
+}
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>vpll</tabTrigger>
+	<tabTrigger>sieve</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.c++</scope>
 </snippet>
