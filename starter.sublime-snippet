@@ -3,35 +3,46 @@
 #include "bits/stdc++.h"
 using namespace std;
 
+#define ub upper_bound
+#define sum(a) accumulate(all(a),0ll)
+#define lb lower_bound
+#define all(v) begin(v),end(v)
+#define allr(v) rbegin(v),rend(v)
+#define sort_dec(v) sort(all(v),[](auto e1,auto e2){return e1>e2;})
+#define For(n) for(ll i=0;i<n;i++)
+#define Forj(n) for(ll j=0;j<n;j++)
+typedef long long int ll;
+typedef unsigned long long int ull;
+#define fi first
+#define se second
+#define rep(i,a,n) for(ll i=a;i<n;i++)
+#define Mp 1e9+7
+#define vpll vector< pair<ll,ll> >
+#define bug(n) {cout<<n;return;}
+#define cont(n) {cout<<n<<endl;continue;}
+#define pb push_back
+ 
 void solve()
-{$0}
-
+{
+	$0
+}
+ 
 int main()
 {
-ios_base::sync_with_stdio(false);cin.tie(NULL);
+	ios_base::sync_with_stdio(false);cin.tie(NULL);
+	 
+	freopen("error.txt", "w", stderr);
+	 
+	int t=1;
+	 
+	while(t--)
+	{
+		solve();
+	}
 
-#ifndef ONLINE_JUDGE
-freopen("input.txt", "r", stdin);
-freopen("error.txt", "w", stderr);
-freopen("output.txt", "w", stdout);
-#endif
-
-int t=1;
-
-// #ifndef ONLINE_JUDGE
-// cin>>t;
-// #endif
-
-while(t--)
-{
-	solve();
-}
-
-#ifndef ONLINE_JUDGE
-cerr<<"time taken : "<<(float)clock()/CLOCKS_PER_SEC<<" secs"<<endl;
-#endif
-
-return 0;
+	cerr<<"time taken : "<<(float)clock()/CLOCKS_PER_SEC<<" secs"<<endl;
+	 
+	return 0;
 }
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
