@@ -1,0 +1,46 @@
+<snippet>
+	<content><![CDATA[
+struct MaxHeap{
+	vector<ll> v;
+	ll sz;
+	MaxHeap(){sz=0;}
+	ll parent(ll i){return (i-1)/2;}
+	ll left(ll i){return 2*i+1;}
+	ll right(ll i){return 2*i+2;}
+	void insert(ll newItem){
+		sz++;
+		v.push_back(newItem);
+		ll newInd=sz-1;
+		while(newInd>0&&v[parent(newInd)]<v[newInd]){
+			swap(v[parent(newInd)],v[newInd]);
+			newInd=parent(newInd);
+		}
+	}
+	void heapify(ll root){
+		ll largest=root;
+		ll l=left(root),r=right(root);
+		if(l<sz&&v[largest]<v[l])largest=l;
+		if(r<sz&&v[largest]<v[r])largest=r;
+		if(largest!=root)
+		{
+			swap(v[root],v[largest]);
+			heapify(largest);
+		}
+	}
+	ll empty(){return v.empty();}
+	ll top(){
+		return v[0];
+	}
+	void pop(){
+		swap(v.front(),v.back());
+		v.pop_back();
+		sz--;
+		heapify(0);
+	}
+};
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>max_heap</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.c++</scope>
+</snippet>

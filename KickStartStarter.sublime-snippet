@@ -18,7 +18,7 @@ typedef unsigned long long int ull;
 #define rep(i,a,n) for(ll i=a;i<n;i++)
 #define rev(i,n,a) for(ll i=n;i>=a;i--)
 #define vpll vector< pair<ll,ll> >
-#define bug(n) {cout<<n;return;}
+#define bug(n) {cout<<n<<endl;return;}
 #define cont(n) {cout<<n<<endl;continue;}
 #define pb push_back
 #define print(n) cout<<n<<" ";
@@ -39,8 +39,8 @@ int main()
 
 	cin>>t;
 	 
-	while(t--)
-	{
+	rep(i,1,t+1){
+		cout<<"Case #"<<i<<": ";
 		solve();
 	}
 
@@ -50,7 +50,7 @@ int main()
 }
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>starter</tabTrigger>
+	<tabTrigger>KickStartStarter</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.c++</scope>
 </snippet>

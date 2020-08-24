@@ -1,0 +1,27 @@
+<snippet>
+	<content><![CDATA[
+ll root(ll i,ll a[]){
+	while(i!=a[i]){
+		a[i]=a[a[i]];
+		i=a[i];
+	}
+	return i;
+}
+
+void union(ll a,ll b,ll par[],ll sz[]){
+	if(root(a,par)==root(b,par))return;
+	if(sz[a]<sz[b]){
+		sz[root(a,par)]+=sz[root(b,par)];
+		par[root(b,par)]=root(a,par);
+	}
+	else{
+		sz[root(b,par)]+=sz[root(a,par)];
+		par[root(a,par)]=root(b,par);
+	}
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>dsu</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.c++</scope>
+</snippet>
